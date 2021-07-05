@@ -1,5 +1,7 @@
 <?php
 //get data from form
+
+if (isset($_POST['Sumbit'])){
 $name = $_POST['name'];
 $address1 = $_POST['address1'];
 $address2 = $_POST['address2'];
