@@ -24,7 +24,7 @@ $age5 = $_POST['age5'];
 $sign = $_POST['sign'];
 $date = $_POST['date'];
 
-$mailto = "askale_asmelash@yahoo.com";
+$mailTo = "askale_asmelash@yahoo.com";
 $subject = "Mail From website";
 $txt ="name = ". $name . "\r\n  address1 = " . $address1 . "\r\n address2 =" . $address2 .
 "\r\n city =" . $city . "\r\n state =" . $state . "\r\n zip =" . $zip .
