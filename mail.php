@@ -24,7 +24,7 @@ $age5 = $_POST['age5'];
 $sign = $_POST['sign'];
 $date = $_POST['date'];
 
-$to = "askale_asmelash@yahoo.com";
+$to = "askale_asmelash@goodday.edu";
 $subject = "Mail From website";
 $txt ="name = ". $name . "\r\n  address1 = " . $address1 . "\r\n address2 =" . $address2 .
 "\r\n city =" . $city . "\r\n state =" . $state . "\r\n zip =" . $zip .
@@ -35,7 +35,7 @@ $txt ="name = ". $name . "\r\n  address1 = " . $address1 . "\r\n address2 =" . $
 "\r\n age5 =" . $age5 . "\r\n sign =" . $sign . "\r\n date =" . $date;
 
 
-$headers = "From: askale_asmelash@yahoo.com" . "\r\n" .
+$headers = "From: askale_asmelash@goodday.edu" . "\r\n" .
 "CC: askale_asmelash@yahoo.com";
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
