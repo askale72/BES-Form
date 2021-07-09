@@ -25,7 +25,7 @@ $sign = $_POST['sign'];
 $date = $_POST['date'];
 
 $mailTo = "askale_asmelash@yahoo.com";
-$subject = "Mail From website";
+$headers = "From: .$mailFrom;
 $txt ="name = ". $name . "\r\n  address1 = " . $address1 . "\r\n address2 =" . $address2 .
 "\r\n city =" . $city . "\r\n state =" . $state . "\r\n zip =" . $zip .
 "\r\n telephone =" . $telephone . "\r\n email =" . $email . "\r\n sname =" . $sname .
@@ -34,12 +34,6 @@ $txt ="name = ". $name . "\r\n  address1 = " . $address1 . "\r\n address2 =" . $
 "\r\n child5 =" . $child4 . "\r\n age4 =" . $age4 . "\r\n child5 =" . $child5 .
 "\r\n age5 =" . $age5 . "\r\n sign =" . $sign . "\r\n date =" . $date;
 
-
-$headers = "From: askale_asmelash@yahoo.com" . "\r\n" .
-"CC: askale_asmelash@yahoo.com";
-if($email!=NULL){
-    mail($to,$subject,$txt,$headers);
+mail($mailTo,$subject,$txt,$headers);
+header("Location:mail.php?mailsend");
 }
-//redirect
-header("Location:thankyou.html");
-?>
